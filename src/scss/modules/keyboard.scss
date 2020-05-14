@@ -1,0 +1,57 @@
+@import "../utils/vars.scss";
+
+#keyboard {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  top: 70%;
+  left: -100vw;
+  z-index: 40;
+  display: block;
+  background-color: rgba(51, 51, 51, 0.692);
+  transition-property: left;
+  transition-duration: 1.2s;
+}
+
+#keyboard.active {
+  left: 0px;
+  display: block;
+}
+
+.keyboard{
+  height: 100%;
+  margin-top: 1vh;
+  font-family: $mainFontFamily;
+  text-align: center;
+}
+
+.keyboard button {
+  margin: 0.15%;
+  max-width: 5%;
+  width: 25%;
+  max-height: 15%;
+  height: 20%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  font-family: $mainFontFamily;
+  font-size: 80%;
+  font-weight: 600;
+  overflow: hidden;
+  background-color: $submitColor;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px -2px #33191930;  
+}
+
+.keyboard button:hover {
+  background-color: $submitColorHover;
+}
+
+.keyboard button.active{
+  background-color: rgb(252, 177, 239);
+}
+
+.keyboard button.active:hover {
+  background-color: rgb(219, 152, 208);
+}

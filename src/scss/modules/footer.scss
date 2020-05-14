@@ -1,0 +1,39 @@
+@import "../utils/vars";
+
+footer {
+  width: 100%;
+  height: $footerHeight;
+  overflow: hidden;
+ 
+}
+
+footer img {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  object-fit: cover;
+  filter: opacity(80%);
+}
+
+footer div {
+  margin: 0;
+  width: 100%;
+  height: $footerHeight;
+  position: absolute;
+  z-index: 11;
+  background: linear-gradient(to top,transparent 0%,$backgroundColor 70%);
+}
+
+footer div span {
+  font-weight: 400;
+  line-height: $footerHeight;
+  position: absolute;
+}
+
+span.company {
+  left: 40px;
+}
+
+span.author { 
+right: 60px;
+}

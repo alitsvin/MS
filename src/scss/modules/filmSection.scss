@@ -1,0 +1,205 @@
+@import "../utils/vars.scss";
+
+#filmSection {
+  width: 100%;
+  height: $filmSectionHeight;
+  display: flex;
+  flex-direction: column;
+  color: $fontColor;
+}
+
+#searchBlock {
+  height: $searchBlockHeight;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#searchInput {
+  padding-left: 10px;
+  width: 60%;
+  max-height: 30px;
+  height: 80%;
+  font-family: $mainFontFamily;
+  color: $fontColor;
+  border: 1px solid rgb(192, 192, 192);
+  border-right: none;
+}
+
+#deleteButton, #keyboardButton {
+  padding: 1px;
+  width: 30px;
+  max-height: 30px;
+  height: 80%;
+  background-color: white;
+  border: 1px solid rgb(192, 192, 192);
+  border-left: none;
+  border-right: none;
+}
+
+.deleteLineOne, .deleteLineTwo {
+  width: 100%;
+  height: 3px;
+  position: relative;
+  display: block;
+  background-color: rgb(255, 183, 183);
+  transition-property: background-color;
+  transition-duration: 0.1s;
+}
+
+.deleteLineOne {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.deleteLineTwo {
+  top: 40%;
+  transform: rotate(-45deg);
+}
+
+#deleteButton:hover {
+  cursor: pointer;
+  .deleteLineOne, .deleteLineTwo{
+    background-color: red;
+    //box-shadow: 0px 0px 3px rgb(158, 25, 2);
+  }
+}
+
+#keyboardButton img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: opacity(20%);
+  transition-duration: 0.3s;
+}
+
+#keyboardButton img:hover{
+  cursor: pointer;
+  filter: opacity(80%);
+}
+
+#searchSubmit {
+  padding:0px 6px 0px;
+  width: 15%;
+  max-height: 34px;
+  height: calc(80% + 4px);
+  font-family: 'Montserrat', sans-serif;
+  color: $fontColor;
+  border: none;
+  background-color: $submitColor;
+}
+
+#searchSubmit:hover {
+  cursor: pointer;
+  background-color: $submitColorHover;
+}
+
+#statusBar {
+  width: 100%;
+  height:  $statusBarHeight;
+}
+
+#statusBar span{
+  position: absolute;
+  left: 40px;
+}
+
+#slider {
+  height: $sliderHeight;
+  display: flex;
+  overflow: hidden;
+  z-index: 20;
+}
+
+img.arrow {
+  width: $arrowSize;
+  height: $arrowSize;
+  position: absolute;
+  top: 50%;
+  z-index: 30;
+}
+
+img.arrow.Left {
+  transform: rotate(90deg);
+}
+
+img.arrow.Right {
+  right: 0vw;
+  transform: rotate(-90deg);
+}
+
+img.arrow:hover { 
+  cursor: pointer;
+  transition-property: height,width;
+  transition-duration: 0.1s;
+  width: 30px;
+  height: 30px;
+}
+
+#filmBlock {
+  height: $filmBlockHeight;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  transition-property: translateX();
+  transition-duration: 2s;
+}
+
+.card {
+  height: 80%;
+  display: none;
+}  
+
+.onScreen {
+  display: block;
+}
+
+.cardContent {
+  margin: 10px 30px 10px;
+  width: calc(100% - 60px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;   
+  background-color: rgb(247, 241, 231); 
+  box-shadow: 0px 0px 10px  rgb(204, 203, 199);
+  transition-property: box-shadow;
+  transition-duration: 0.3s;
+}
+
+.cardContent div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardContent .title {
+  height: 10%;
+}
+
+.cardContent .title a{
+  color: $fontColor;
+  text-decoration: none;
+}
+
+.cardContent .title a:hover{
+  text-decoration: underline;
+}
+
+.cardContent img {
+  height: 70%;
+  object-fit: contain;  
+}
+
+.cardContent .cardInfo {
+  height: 20%;
+}
+
+.cardInfo span {
+  line-height: 30px;
+}

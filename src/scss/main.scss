@@ -1,0 +1,33 @@
+@import "utils/vars";
+
+@import "modules/filmSection.scss";
+@import "modules/footer.scss";
+@import "modules/header.scss";
+@import "modules/loadIcon.scss";
+@import "modules/keyboard.scss";
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  @media screen and (max-width: $desktopWidth) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: $tableWidth) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 14px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: $backgroundColor;
+}
+
+
+

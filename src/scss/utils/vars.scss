@@ -1,0 +1,35 @@
+/* Vars:
+   ========================================================================== */
+
+// Size
+
+$mainFontFamily              :'Montserrat', sans-serif;
+$backgroundColor         : floralwhite;
+$fontColor               : rgb(44, 44, 44);
+
+$headerHeight            : 100px;
+
+$filmSectionHeight       : calc(100% - 190px);
+$searchBlockHeight       : 10%;
+$submitColor             : rgb(67, 182, 235);
+$submitColorHover        : rgb(57, 155, 201);
+$statusBarHeight         : 5%;
+$sliderHeight            : 80%;
+
+$arrowSize               : 20px;
+$filmScreenWidth         : calc(100% - 40px);
+
+$filmBlockTop            :calc(100px + 0.15 * (100% - 190px));
+$filmBlockHeight         :100%;
+
+$cardWidth               : 300px;
+
+$footerHeight            : 90px;
+
+$desktopWidth            : 1280px;
+$smDesktopWidth          : 1024px;
+$tableWidth              : 768px;
+$smTableWidth            : 640px;
+$phoneWidth              : 480px;
+$smPhoneWidth            : 320px;
+
